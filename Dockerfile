@@ -48,5 +48,4 @@ RUN apt update && \
 
 USER avorion
 VOLUME /var/avorion
-ENTRYPOINT [ "/bin/bash" ]
 CMD [ "/opt/avorion/server.sh", "--public", "1", "--use-steam-networking", "1", "--datapath", "/var/avorion/galaxies" ]
